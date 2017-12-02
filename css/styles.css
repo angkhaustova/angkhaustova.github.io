@@ -1,0 +1,141 @@
+* {
+    transition: all ease-in-out .5s;
+}
+
+.toggle-light {
+    /*width: 3.2em*/
+}
+
+button {
+    cursor: pointer
+}
+
+/* ----------------- */
+
+.fragment {
+    -webkit-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+
+}
+
+.complexFragmentMarker {
+    font-size: 18px;
+    font-family: arial, sans-serif;
+    color: rgba(63, 103, 202, 1);
+    border: 1px rgba(63, 103, 202, 1) solid;
+    padding: 0 0 0 4px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+.go {
+    font-size: 16px;
+    font-family: arial, sans-serif;
+    color: rgba(63, 103, 202, 0.5);
+    border: 1px rgba(63, 103, 202, 0.5) solid;
+    padding: 0 4px;
+    border-radius: 50%;
+    /*cursor: auto;*/
+    cursor: not-allowed;
+}
+
+.go-active {
+    color: rgba(63, 103, 202, 1);
+    border: 1px rgba(63, 103, 202, 1) solid;
+    cursor: pointer;
+}
+
+.complexFragmentNav {
+    display: none;
+}
+
+.complex-higlight {
+    background-color: rgba(63, 103, 202, 0.15);
+}
+
+.pale {
+    color: #aaa;
+}
+
+.bright {
+    color: #000;
+}
+
+.inscribed-view-init {
+    opacity: 0;
+    /*display:none;*/
+}
+
+.inscribed-view {
+    opacity: 1;
+    /*display: inline;*/
+}
+
+.crossed-view-init {
+    /*text-decoration: none;*/
+}
+
+.crossed-view {
+    text-decoration: line-through;
+}
+
+/* ----------------- */
+
+img {
+    /*width: 100%;*/
+}
+
+.text-container {
+    padding-top: 1em;
+    /*max-height: 755px;*/
+    height: 100%;
+    overflow-y: scroll;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    text-align: justify;
+}
+
+.original {
+    display: none;
+}
+
+.highlight.crossed {
+    text-decoration: line-through;
+}
+
+.highlight.inscribed {
+    background-color: bisque;
+}
+
+.highlight.editor {
+    background-color: lavender;
+}
+
+.editor-hidden {
+    opacity: 0;
+}
+
+.inscribed.editor-hidden {
+    opacity: 1;
+}
+
+.highlight.inscribed .crossed.editor-hidden, .highlight.inscribed .brace {
+    background-color: white;
+    opacity: 1;
+    color: white;
+    -webkit-user-select: none; /* Chrome all / Safari all */
+    -moz-user-select: none; /* Firefox all */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+}
+
+.row.tool {
+    max-height: calc(100vh - 60px);
+}
+
+img {
+    height: 100%
+}

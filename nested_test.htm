@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Самый лучший инструмент</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/nested.js"></script>
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <nav class="navbar navbar-light bg-faded sticky-top bg-light  justify-content-between">
+                <div class="btn-group">
+                    <div class="btn-group">
+                        <button class="dropdown-toggle btn btn-light" id="braces-dropdown"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" type="button">
+                            {Подписано}
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="braces-dropdown">
+                            <button type="button" class="dropdown-item toggle-view active" data-view="editor-view"
+                                    data-type="inscribed">
+                                Редакторская разметка
+                            </button>
+                            <button type="button" class="dropdown-item toggle-view" data-view="highlight"
+                                    data-type="inscribed">Выделить фрагменты
+                            </button>
+                            <button type="button" class="dropdown-item toggle-view editor-hide"
+                                    data-view="editor-hidden"
+                                    data-type="inscribed">Скрыть разметку
+                            </button>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="dropdown-toggle btn btn-light"
+                                data-type="brackets" id="brackets-dropdown"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">[Зачеркнуто]
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="brackets-dropdown">
+                            <button type="button" class="dropdown-item toggle-view active" data-view="editor-view"
+                                    data-type="crossed">
+                                Редакторская разметка
+                            </button>
+                            <button type="button" class="dropdown-item toggle-view" data-view="highlight"
+                                    data-type="crossed">Выделить фрагменты
+                            </button>
+                            <button type="button" class="dropdown-item toggle-view editor-hide"
+                                    data-view="editor-hidden"
+                                    data-type="crossed">Скрыть фрагменты
+                            </button>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="dropdown-toggle btn btn-light"
+                                data-type="chevrons" id="chevrons-dropdown"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&ltРед. пометки&gt
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="chevrons-dropdown">
+                            <button type="button" class="dropdown-item toggle-view active" data-view="editor-view"
+                                    data-type="editor">
+                                Редакторская разметка
+                            </button>
+                            <button type="button" class="dropdown-item toggle-view" data-view="highlight"
+                                    data-type="editor">Выделить фрагменты
+                            </button>
+                            <button type="button" class="dropdown-item toggle-view editor-hide"
+                                    data-view="editor-hidden"
+                                    data-type="editor">Скрыть фрагменты
+                            </button>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-light clear-view" data-type="animation">
+                        Очистить форматирование
+                    </button>
+                    <button type="button" class="btn btn-light toggle-animation" data-type="animation">
+                        Сложные фрагменты
+                    </button>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-light toggle-text active" data-type="modern">
+                        Соверменная орфография
+                    </button>
+                    <button type="button" class="btn btn-light toggle-text" data-type="original">
+                        Оригинальная орфография
+                    </button>
+                </div>
+
+            </nav>
+        </div>
+
+    </div>
+    <div class="row tool">
+
+        <div class="col-5">
+            <img src="img/n4-p49.jpg">
+        </div>
+        <div class="col-7">
+
+            <div class="modern text-container" id="modern">
+                <div class="text"><p align="right" style="margin-right:-1.45pt;text-align:right; text-indent:14.2pt">
+                    49</p>
+                    <p>печку? {Но там {они} непременно, первее всего} Начнут рыться и тотчас [увидят]
+                        {найдут.}” [{Правда.}] [Куда] В это время луч солнца осветил мой <a href="#_ftn1"
+                                                                                            name="_ftnref1"
+                                                                                            title=""
+                                                                                            id="_ftnref1"
+                                                                                            class="ref">[1]</a>
+                        левый сапог; смотр[я]{ю}, на носке, который из сапога выглядывал, точно как будто знаки. Я
+                        бросился
+                        разуваться — действительно, знаки {крови. Должно быть, я запачкал, когда сапог в ту лужу
+                        поставил}.
+                        Я оглядел и сапоги, — на сапогах {было} не заметно. “Но что же, что же с этим делать, куда
+                        деваться
+                        от вс[ей]{ех} эт[ой]{их} [крови] {пятен}? Замыть? Нет, лучше выйти куда-нибудь и всё выбросить,
+                        выбросить… Да, лучше выбросить!” — сказал я [и вижу] [{почув&lt;ствовал&gt;}] [что я уже опять
+                        на
+                        диване], {в изнеможении опять садясь на диван.} {Страшное уныние о том, что я не в состоянии
+                        даже
+                        вещи припрятать, придавило меня. И опять начался озноб.} Но {тут уже} я [не] {не мог}
+                        вста[л]{ть},
+                        [нат&lt;¿&gt;] [выбросить] {[и] [а потянул опять]} [на себя шинель.] {страшно мучаясь мыслию,
+                        что
+                        надо бы встать и опять начать делать и осматривать и прибирать и прятать.} И долго, несколько
+                        часов
+                        может быть, мне всё {это как [вс] в бреду} мерещилось, что надобно выбросить, сходить {бы}
+                        куда-нибудь и всё выбросить. [Потом я [за] как будто] {Но я не встал [, и]} [{Наконец совершен&lt;но&gt;}]
+                        забылся. [{[Когда] [я] [натянул на себя опять] [однако ж &lt;¿&gt;] [успел опять]
+                        {успел этот раз <a href="#_ftn2" name="_ftnref2" title="" id="_ftnref2" class="ref">[2]</a>}
+                        {Когда я успел
+                        опять
+                        натянуть на себя} шинель — [{но когда я уж и}] не помню [; но проснулся я уже] закутанный
+                        шинелью.}]</p>
+                    <p>[Много, много прошло [{Сколько прошло}] времени. [в]{В}друг слышу, что] [{Не знаю
+                        м}]
+                        {Проснул&lt;ся&gt; ж я [на другой день] очень поздно от чрезвычайного стука в мою дверь. С
+                        первого
+                        раза мне показалось, что ее даже ломают.} Ко мне стучат[ь]ся; [но я лежал] {когда я [стал
+                        приходить] {услышал}}, {тотчас же догадался, что я <a href="#_ftn3" name="_ftnref3"
+                                                                              title=""
+                                                                              id="_ftnref3" class="ref">[3]</a>} {тут же
+                        я
+                        почувствовал, что я} весь в жару, а может быть, {и} в бреду. [и давно уже
+                        {почему-то}
+                        [знал] {и сознавал}, что я в жару {хотя и был в забытьи.}] {Я это и во сне чувствовал.}
+                        Стук
+                        продолжался, [и вдруг я опять всё припомнил {и страшный испуг овладел мною.}] {и я вскочил и
+                        сел.}
+                    </p>
+                    <p>—&nbsp;Да отвори! жив [ты, что ли,] {аль нет?} чего он всё дрыхнет! — [за]кричала Настасья. —
+                        {Целые
+                        дни-деньские дрыхнет как пес. Знать, нечего делать.}</p>
+                    <p>—&nbsp;А может, и дом[у]{а} нет, — сказал дворник <a href="#_ftn4" name="_ftnref4" title=""
+                                                                            id="_ftnref4" class="ref">[4]</a>
+                        {проговорил
+                        еще голос.
+                        “Ба!
+                        дворник. Что такое?” Я вскочил.}</p>
+                    <p>—&nbsp;А крюком{-то} кто ж заперся&lt;?&gt; [Эх ты!] {Ишь, запираться стал! Самого украдут, что
+                        ли?}
+                        Отвори, [говорят] {голова,} проснись!</p>
+                    <p>&nbsp;</p>
+                    <p>&lt;I.&nbsp;<i>На полях слева возле текста</i>: сходить {бы} куда-нибудь ~ забылся. —<i>
+                        запись</i>:&gt;
+                    </p>
+                    <p>[Ког&lt;да&gt;]</p>
+                    <p>&nbsp;</p>
+                    <p>&lt;II.&nbsp;<i>На верхнем и нижнем полях находятся записи к с.&nbsp;48</i>: подумал ~ так прячу&lt;т&gt;;
+                        Тут я вспомнил ~ есть соображ&lt;ение&gt;; так бросить?; что не могу ~ кар&lt;ман&gt;.&gt;</p>
+                    <p>&nbsp;</p>
+                </div>
+                <div class="refs"><br clear="all">
+                    <hr align="left" size="1" width="33%">
+                    <div id="ftn1"><p><a href="#_ftnref1" name="_ftn1" title="" id="_ftn1"><span lang="EN-GB"
+                                                                                                 xml:lang="EN-GB"><span
+                            lang="EN-GB"
+                            style="font-size:10.0pt;font-family: &quot;Times New Roman&quot;,&quot;serif&quot;"
+                            xml:lang="EN-GB">[1]</span></span></a>&nbsp;<i>В тексте описка</i>: мои</p></div>
+                    <div id="ftn2"><p><a href="#_ftnref2" name="_ftn2" title="" id="_ftn2"><span lang="EN-GB"
+                                                                                                 xml:lang="EN-GB"><span
+                            lang="EN-GB" xml:lang="EN-GB">[2]</span></span></a>&nbsp;<i>Незачеркнутый вариант: </i>успел
+                        этот раз&nbsp;—&nbsp;<i>вписан под строкой</i>.</p></div>
+                    <div id="ftn3"><p><a href="#_ftnref3" name="_ftn3" title="" id="_ftn3"><span lang="EN-GB"
+                                                                                                 xml:lang="EN-GB"><span
+                            lang="EN-GB" xml:lang="EN-GB">[3]</span></span></a>&nbsp;<i>Незачеркнутый вариант</i>.</p>
+                    </div>
+                    <div id="ftn4"><p><a href="#_ftnref4" name="_ftn4" title="" id="_ftn4"><span lang="EN-GB"
+                                                                                                 xml:lang="EN-GB"><span
+                            lang="EN-GB" xml:lang="EN-GB">[4]</span></span></a>&nbsp;<i>Незачеркнутый вариант</i>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="original text-container" id="original">
+                <div class="text"><p align="right"
+                                     style="margin-right:-1.45pt;text-align:right; text-indent:14.2pt">
+                    49</p>
+                    <p>печку? {Но тамъ {они} непремѣнно, первѣе всего} Начнутъ рыться и тотчасъ [увидятъ]
+                        {найдутъ.} [{Правда.}] [Куда] Въ это время лучь солнца освѣтилъ мои <a href="#_ftn1"
+                                                                                               name="_ftnref1"
+                                                                                               title=""
+                                                                                               id="_ftnref1"
+                                                                                               class="ref">[1]</a>
+                        лѣвый сапогъ; смотр[я]{ю}, на носкѣ, который изъ сапога выглядывалъ точно какъ будто знаки. Я
+                        бросился разуваться — дѣйствительно знаки {крови. Должно быть я запачкалъ когда сапогъ въ ту
+                        лужу
+                        поставилъ}. Я оглядѣлъ и сапоги, — на сапогахъ {было} не замѣтно <a class="ref" href="#_ftn2"
+                                                                                            name="_ftnref2"
+                                                                                            title=""
+                                                                                            id="_ftnref2">[2]</a>.
+                        Но что-же, что-же съ этимъ дѣлать, куда дѣваться отъ вс[ей]{ѣхъ} эт[ой]{ихъ} [крови] {пятенъ}?
+                        Замыть? Нѣтъ лучше выдти куда-нибудь и все выбросить, выбросить… Да лучше выбросить! сказалъ я
+                        [и
+                        вижу] [{почув&lt;ствовалъ&gt;}] [что я уже опять на диванѣ] {въ изнеможенiи опять садясь на
+                        диванъ.}
+                        {Страшное унынiе о томъ что я не въ состоянiи даже вещи припрятать придавило меня. И опять
+                        начался
+                        ознобъ.} Но {тутъ уже} я [не] {не могъ} вста[лъ]{ть}, [нат&lt;¿&gt;] [выбросить] {[и] [а
+                        потянулъ
+                        опять]} [на себя шинель.] {страшно мучаясь мыслiю, что надо бы встать и опять начать дѣлать и
+                        осматривать и прибирать и прятать.} И долго, нѣсколько часовъ можетъ быть мнѣ все {это какъ [вс]
+                        въ
+                        бреду} мерещилось, что надобно выбросить, сходить {бы} куда-нибудь и все выбросить. [Потомъ я
+                        [за]
+                        какъ будто] {Но я не всталъ <a href="#_ftn3" name="_ftnref3" title="" id="_ftnref3" class="ref">[3]</a>[,
+                        и]}
+                        [{Наконецъ совершен&lt;но&gt;}] забылся. [{[Когда] [я] [натянулъ на себя опять]
+                        [однако жъ &lt;¿&gt;] [успѣлъ опять] {успѣлъ этотъ разъ <a href="#_ftn4" name="_ftnref4"
+                                                                                   title=""
+                                                                                   id="_ftnref4" class="ref">[4]</a>}
+                        {Когда я успѣлъ
+                        опять натянуть на себя} шинель — [{но когда я ужъ и}] не помню <a href="#_ftn5" name="_ftnref5"
+                                                                                          title="" id="_ftnref5"
+                                                                                          class="ref">[5]</a>
+                        [;
+                        но проснулся я уже] закутанный шинелью.}]</p>
+                    <p>[Много, много прошло [{Сколько прошло}] времени [в]{В}другъ слышу что] [{Не знаю
+                        м}]
+                        {Проснул&lt;ся&gt; жъ я [на другой день] очень поздно отъ чрезвычайнаго стука въ мою дверь. Съ
+                        перваго раза мнѣ показалось что ее даже ломаютъ.} Ко мнѣ стучат[ь]ся; [но я лежалъ] {когда
+                        я
+                        [сталъ приходить] {услышалъ}} {тотчасъ-же догадался что я <a href="#_ftn6" name="_ftnref6"
+                                                                                     title=""
+                                                                                     id="_ftnref6" class="ref">[6]</a>}
+                        {тутъ же я почувствовалъ что я} весь въ жару а можетъ быть {и} въ бреду. [и давно уже
+                        {почему-то}
+                        [зналъ] {и сознавалъ} что я въ жару {хотя и былъ въ забытьи.}] {Я это и во снѣ
+                        чувствовалъ}
+                        Стукъ продолжался [и вдругъ я опять все припомнилъ {и страшный испугъ овладѣлъ мною.}] {и я
+                        вскочилъ
+                        и сѣлъ.}</p>
+                    <p>—&nbsp;Да отвори! живъ [ты что-ли,] {аль нѣтъ?} чего онъ все дрыхнетъ! [за]кричала Настасья.
+                        {Цѣлыя
+                        дни-деньскiе дрыхнетъ какъ песъ. Знать нечего дѣлать.}</p>
+                    <p>—&nbsp;А можетъ и дом[у]{а} нѣтъ — сказалъ дворникъ <a href="#_ftn7" name="_ftnref7" title=""
+                                                                              id="_ftnref7" class="ref">[7]</a>
+                        {проговорилъ еще
+                        голосъ.
+                        Ба! дворникъ. Что такое? Я вскочилъ.}</p>
+                    <p>—&nbsp;А крюкомъ{-то} ктожъ заперся. [Эхъ ты!] {Ишь, запираться сталъ! Самого украдутъ что-ли?}
+                        Отвори [говорятъ] {голова,} проснись!</p>
+                    <p>&nbsp;</p>
+                </div>
+                <div>
+
+
+                    <p>&lt;I.&nbsp;<i>На полях слева возле текста</i>: сходить {бы} куда-нибудь ~ забылся. —<i>
+                        запись</i>:&gt;
+                    </p>
+                    <p>[Ког&lt;да&gt;]</p>
+                    <p>&nbsp;</p>
+                    <p>&lt;II.&nbsp;<i>На верхнем и нижнем полях находятся записи к с.&nbsp;48</i>: подумалъ ~ такъ
+                        прячу&lt;тъ&gt;;
+                        Тутъ я вспомнилъ ~ есть соображ&lt;енiе&gt;; такъ бросить?; что не могу ~ кар&lt;манъ&gt;.&gt;
+                    </p>
+                    <p>&nbsp;</p></p>
+
+                </div>
+                <div class="refs"><br clear="all">
+                    <hr align="left" size="1" width="33%">
+                    <div id="ftn1"><p><a href="#_ftnref1" name="_ftn1" title="" id="_ftn1"><span lang="EN-GB"
+                                                                                                 xml:lang="EN-GB"><span
+                            lang="EN-GB"
+                            style="font-size:10.0pt;font-family: &quot;Times New Roman&quot;,&quot;serif&quot;"
+                            xml:lang="EN-GB">[1]</span></span></a>&nbsp;<i>Описка. Следует читать</i>: мой</p></div>
+                    <div id="ftn2"><p><a href="#_ftnref2" name="_ftn2" title="" id="_ftn2"><span lang="EN-GB"
+                                                                                                 xml:lang="EN-GB"><span
+                            lang="EN-GB"
+                            style="font-size:10.0pt;font-family: &quot;Times New Roman&quot;,&quot;serif&quot;"
+                            xml:lang="EN-GB">[2]</span></span></a>&nbsp;<i>В скорописи автора слитное написание</i>:
+                        незамѣтно</p></div>
+                    <div id="ftn3"><p><a href="#_ftnref3" name="_ftn3" title="" id="_ftn3"><span lang="EN-GB"
+                                                                                                 xml:lang="EN-GB"><span
+                            lang="EN-GB"
+                            style="font-size:10.0pt;font-family: &quot;Times New Roman&quot;,&quot;serif&quot;"
+                            xml:lang="EN-GB">[3]</span></span></a>&nbsp;<i>В скорописи автора слитное написание</i>:
+                        невсталъ</p></div>
+                    <div id="ftn4"><p><a href="#_ftnref4" name="_ftn4" title="" id="_ftn4"><span lang="EN-GB"
+                                                                                                 xml:lang="EN-GB"><span
+                            lang="EN-GB" xml:lang="EN-GB">[4]</span></span></a>&nbsp;<i>Незачеркнутый вариант: </i>успѣлъ
+                        этотъ разъ&nbsp;—&nbsp;<i>вписан под строкой</i>.</p></div>
+                    <div id="ftn5"><p><a href="#_ftnref5" name="_ftn5" title="" id="_ftn5"><span lang="EN-GB"
+                                                                                                 xml:lang="EN-GB"><span
+                            lang="EN-GB"
+                            style="font-size:10.0pt;font-family: &quot;Times New Roman&quot;,&quot;serif&quot;"
+                            xml:lang="EN-GB">[5]</span></span></a>&nbsp;<i>В скорописи автора слитное написание</i>:
+                        непомню</p></div>
+                    <div id="ftn6"><p><a href="#_ftnref6" name="_ftn6" title="" id="_ftn6"><span lang="EN-GB"
+                                                                                                 xml:lang="EN-GB"><span
+                            lang="EN-GB" xml:lang="EN-GB">[6]</span></span></a>&nbsp;<i>Незачеркнутый вариант</i>.</p>
+                    </div>
+                    <div id="ftn7"><p><a href="#_ftnref7" name="_ftn7" title="" id="_ftn7"><span lang="EN-GB"
+                                                                                                 xml:lang="EN-GB"><span
+                            lang="EN-GB" xml:lang="EN-GB">[7]</span></span></a>&nbsp;<i>Незачеркнутый вариант</i>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr/>
+
+    </div>
+</div>
+</body>
+
+</html>
