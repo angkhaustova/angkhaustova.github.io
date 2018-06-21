@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+    <title>Pizza Police</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="page">
+<header class="header">
+    <div class="header__inner header-inner">
+        <div class="header-inner__logo logo"><img src="a54528972923f79bb205106b2f6cc7ee.png" alt="Логотип" class="logo__image">
+            <p class="logo__text">Pizza Police</p></div>
+        <div class="header-inner__tel tel"><img src="9876f93cb2c8c92663e75fc84ad87bcb.png" alt="Телефон" class="tel__icon"><a
+                href="tel:+7-812-200–40–60" class="tel__num">(812) 200–40–60</a>
+        </div>
+        <a href="#" class="ham-trigger"><span class="ham-trigger__stripes"></span></a>
+        <div class="hamburger">
+            <nav class="header-inner__nav main_nav hamburger__nav">
+                <a class="main_nav__link" href="#">Скидки</a><a class="main_nav__link" href="#">Новинки</a><a
+                    class="main_nav__link" href="#">Пицца полис</a><a class="main_nav__link" href="#">Напитки</a>
+            </nav>
+            <div class="cart">
+                <img src="910985f9dfe4569f61f5787d32cb4fa6.png" alt="Корзина" class="cart__icon">
+                <div class="cart__info info">
+                    <p class="info__pizzas">3 пиццы</p>
+                    <p class="info__price">3450 руб.</p>
+                </div>
+            </div>
+            <div class="tel hamburger__tel"><img src="9876f93cb2c8c92663e75fc84ad87bcb.png" alt="Телефон" class="tel__icon"><a
+                    href="tel:+7-812-200–40–60" class="tel__num">(812) 200–40–60</a>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="slider">
+    <div class="slider__slides slides">
+        <div class="slides__control slides__control--back">
+            <img src="1bc80bb92b4b6f9154045fd05011fa46.png" alt="Назад">
+        </div>
+        <div id="slide-1" class="slides__slide--1 slides__slide slide">
+            <section class="slide__desc desc">
+                <h1 class="desc__h h--1">Набор пиццы<br> на большую компанию</h1>
+                <p class="desc__info">Попробуйте потрясающий, невероятно вкусный, сочный
+                    и жирный набор из 3 пицц. В подарок вы получаете
+                    2 литра холодного, освежающего “Буратино”.</p>
+                <ul class="slide__ingredients ingredients">
+                    <li class="ingredients__list-item list-item"><img src="bfeb1b107382b308f3124dc796a73907.png" alt="Пицца"
+                                                                      class="list-item__icon">Овощная
+                    </li>
+                    <li class="ingredients__list-item list-item"><img src="bfeb1b107382b308f3124dc796a73907.png" alt="Пицца"
+                                                                      class="list-item__icon">Мясная
+                    </li>
+                    <li class="ingredients__list-item list-item"><img src="bfeb1b107382b308f3124dc796a73907.png" alt="Пицца"
+                                                                      class="list-item__icon">Вкусная
+                    </li>
+                    <li class="ingredients__list-item list-item"><img src="bfafa6004a7756fe68269d297257a451.png" alt="Напиток"
+                                                                      class="list-item__icon">Буратино
+                    </li>
+                </ul>
+                <button class="btn--outline desc__btn-order btn-order">Заказать пиццу <span
+                        class="btn-order__el">за </span>
+                    <p class="price btn-order__price">12 700 <span class="price__rub">Руб.</span></p></button>
+                <p class="desc__price price">12 700 <span class="price__rub">Руб.</span></p>
+            </section>
+            <section class="slide__pics pics">
+                <img src="faa79c24d0bb74affc08b7a65e65a4b5.png" alt="Изображение пиццы" class="pics__pizza">
+                <img src="0c1c5853cbc05b2cf1e37a762d0b795b.png" alt="Изображение Буратино" class="pics__buratino">
+                <p class="pics__promo promo"><span
+                        class="promo__line promo__line--1">"Буратино" в подарок,</span><br><span
+                        class="promo__line promo__line--2">2 литра чиста</span></p>
+            </section>
+        </div>
+        <div id="slide-2" class="slides__slide--2 slides__slide"></div>
+        <div id="slide-3" class="slides__slide--3 slides__slide"></div>
+        <div class="slides__control slides__control--fwd">
+            <img src="b212e3799180625c0c74b360639feb2a.png" alt="Вперед">
+        </div>
+    </div>
+    <div class="slider__switchers switchers">
+        <span class="switchers__letter">F</span>
+        <a href="#slide-1" class="switchers__switcher">
+        </a>
+        <a href="#slide-2" class="switchers__switcher"></a>
+        <a href="#slide-3" class="switchers__switcher"></a>
+        <span class="switchers__letter">D</span>
+    </div>
+</section>
+<section class="more-pizza">
+    <div class="more-pizza__inner more-pizza-inner">
+        <p class="more-pizza-inner__p">Еще больше вкусной пиццы на этом экране</p>
+    </div>
+</section>
+<div class="modal-wrap">
+    <div class="modal-wrap__modal modal">
+        <h1 class="h--1 modal__h">Набор пиццы<br> на большую компанию</h1>
+        <label for="pizza-size" class="modal__select modal__select-size">Размер пиццы
+            <select name="pizza-size" id="pizza-size">
+                <option value="1">Маленькая</option>
+                <option value="2">Средняя</option>
+                <option value="3">Большая</option>
+            </select>
+        </label>
+        <label for="toppings" class="modal__select modal__select-toppings">Топпинги в пиццу
+            <select name="toppings" id="toppings">
+                <option value="1">Креветки</option>
+                <option value="2">Свининка</option>
+                <option value="3">Ммм</option>
+                <option value="4">Еще топпингов!</option>
+            </select>
+        </label>
+        <button class="btn-add-to-order btn--primary">Добавить в заказ</button>
+    </div>
+</div>
+<div class="page__overlay page__overlay--hidden"></div>
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>
